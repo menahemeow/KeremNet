@@ -1,7 +1,7 @@
 import './PostComponent.css'
 
 
-interface props{
+export interface PostProps{
     postMessage: string;
     likes: number;
     author: string;
@@ -9,18 +9,21 @@ interface props{
     comments: string[];
 }
 
-export function Post(prop: props) {
+export function Post(props: PostProps) {
+
+    console.log(props.comments)
+
     return (
         <div className="Post">
             <div className="Message">
-                <h2> {prop.postMessage} </h2>
+                <h2> {props.postMessage} </h2>
             </div>
             <div className="Information">
-                <div className='Author'> {prop.author} - {prop.dateAndTime.toDateString()} </div>
-                <div className='Likes'> {prop.likes} likes </div>
+                <div className='Author'> {props.author} - {props.dateAndTime.toDateString()} </div>
+                <div className='Likes'> {props.likes} likes </div>
             </div>
             <ul className="Comments">
-                {prop.comments.map((comment: string, index: number) => (
+                {props.comments.map((comment: string, index: number) => (
                     <li key={index}>{comment}</li>
                 ))}
             </ul>
