@@ -1,4 +1,5 @@
 import './PostComponent.css'
+import { CollapseComponent } from '../collapse_component/CollapseComponent';
 
 
 export interface PostProps{
@@ -11,8 +12,6 @@ export interface PostProps{
 
 export function Post(props: PostProps) {
 
-    console.log(props.comments)
-
     return (
         <div className="Post">
             <div className="Message">
@@ -22,11 +21,7 @@ export function Post(props: PostProps) {
                 <div className='Author'> {props.author} - {props.dateAndTime.toDateString()} </div>
                 <div className='Likes'> {props.likes} likes </div>
             </div>
-            <ul className="Comments">
-                {props.comments.map((comment: string, index: number) => (
-                    <li key={index}>{comment}</li>
-                ))}
-            </ul>
+            <CollapseComponent content={props.comments} />
         </div>
     );
 }
