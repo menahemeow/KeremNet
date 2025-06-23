@@ -5,7 +5,7 @@ let postComments = ['woowww it changed my life', 'I love you zoey', 'Return to t
 
 function App() {
   return (
-    <Post postMessage='kaki baki' likes={66} author='zoey' dateAndTime={new Date()} comments={postComments}></Post>
+    <Post postMessage='KereMitavrer Bahutz' likes={66} author='zoey' dateAndTime={new Date()} comments={postComments}></Post>
   );
 }
 

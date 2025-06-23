@@ -1,3 +1,5 @@
+import './PostComponent.css'
+
 
 interface props{
     postMessage: string;
@@ -9,20 +11,20 @@ interface props{
 
 export function Post(prop: props) {
     return (
-        <>
-            <div>
+        <div className="Post">
+            <div className="Message">
                 <h2> {prop.postMessage} </h2>
             </div>
-            <div>
-                <> {prop.author} - {prop.dateAndTime.toDateString()} </>
-                <> {prop.likes} likes </>
+            <div className="Information">
+                <div className='Author'> {prop.author} - {prop.dateAndTime.toDateString()} </div>
+                <div className='Likes'> {prop.likes} likes </div>
             </div>
-            <ul>
+            <ul className="Comments">
                 {prop.comments.map((comment: string, index: number) => (
                     <li key={index}>{comment}</li>
                 ))}
             </ul>
-        </>
+        </div>
     );
 }
 

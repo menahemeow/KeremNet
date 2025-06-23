@@ -1,0 +1,55 @@
+.Post {
+    height: fit-content;
+    width: auto;
+    border-radius: 2%;
+    border-color: black;
+    border-width: 1%;
+    border-style: solid;
+    background-color: green;
+}
+
+.Message {
+    height: fit-content;
+    border-radius: 2%;
+    border-color: black;
+    border-width: 1%;
+    border-style: inset;
+    background-color: darkgreen;
+
+    margin: 3%;
+}
+
+.Information {
+    height: fit-content;
+    border-radius: 2%;
+    border-color: black;
+    border-width: 1%;
+    border-style: inset;
+    background-color: darkgreen;
+
+    display:flex;
+    justify-content: space-between;
+
+    margin: 1%;
+}
+
+.Author {
+    margin: 2%;
+}
+
+.Likes {
+    margin: 2%;
+}
+
+.Comments {
+    height: fit-content;
+    border-radius: 2%;
+    border-color: black;
+    border-width: 1%;
+    border-style: inset;
+    background-color: darkgreen;
+
+    justify-content: space-between;
+
+    margin: 1%;
+}
