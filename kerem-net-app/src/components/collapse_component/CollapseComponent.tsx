@@ -26,20 +26,19 @@ interface Props {
 }
 
 
-export function CollapseComponent(props: Props) {
+export function CollapseComponent({headline, content}: Props) {
 
   return (
         <Accordion
         sx={AccordionSX}>
             <AccordionSummary sx={HeadlineSX}
                 aria-controls="panel3-content"
-                id="panel3-header"
-                >
-                <Typography component="span">{props.headline}</Typography>
+                id="panel3-header">
+                <Typography component="span">{headline}</Typography>
             </AccordionSummary>
             <AccordionDetails>
                 <div>
-                    {props.content.map((comment: string, index: number) => (
+                    {content.map((comment: string, index: number) => (
                         <div className='Comment' style={CommentStyle} 
                         key={index}>{comment}</div>
                     ))}

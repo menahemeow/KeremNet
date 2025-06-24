@@ -1,6 +1,6 @@
 
 
-.Post {
+.post {
     height: fit-content;
     width: 33%;
     border-radius: .5vh;
@@ -12,7 +12,7 @@
     padding: .5%;
 }
 
-.Message {
+.message {
     height: fit-content;
     border-radius: .5vh;
     border-width: 0.01%;
@@ -24,7 +24,7 @@
     padding: 1%;
 }
 
-.Information {
+.information {
     height: fit-content;
     border-radius: 1vh;
     border-width: 0.01%;
@@ -39,7 +39,7 @@
 }
 
 
-.Comments {
+.comments {
     height: fit-content;
     border-radius: 1vh;
     border-width: 0.01%;

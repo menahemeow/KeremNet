@@ -2,16 +2,16 @@
 import { PostProps, Post} from "../post_component/PostComponent";
 
 interface HomeProps {
-    Posts: PostProps[];
+    posts: PostProps[];
 }
 
 
-export function Home(props: HomeProps) {
+export function Home({posts}: HomeProps) {
 
     return (
         <ul className="Posts">
-                {props.Posts.map((props: PostProps, index: number) => (
-                    <li key={index}> <Post postMessage={props.postMessage} likes={props.likes} 
+                {posts.map((props: PostProps, index: number) => (
+                    <li key={index}> <Post message={props.message} likes={props.likes} 
                     author={props.author} dateAndTime={props.dateAndTime} comments={props.comments}></Post></li>
                 ))}
             </ul>

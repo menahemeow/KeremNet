@@ -3,25 +3,25 @@ import { CollapseComponent } from '../collapse_component/CollapseComponent';
 
 
 export interface PostProps{
-    postMessage: string;
+    message: string;
     likes: number;
     author: string;
     dateAndTime: Date;
     comments: string[];
 }
 
-export function Post(props: PostProps) {
+export function Post({message, likes, author, dateAndTime, comments}: PostProps) {
 
     return (
-        <div className="Post">
-            <div className="Message">
-                <h2> {props.postMessage} </h2>
-                <div className="Information">
-                    <div className='Author'> {props.author} - {props.dateAndTime.toDateString()} </div>
-                    <div className='Likes'> {props.likes} likes </div>
+        <div className="post">
+            <div className="message">
+                <h2> {message} </h2>
+                <div className="information">
+                    <div className="author"> {author} - {dateAndTime.toDateString()} </div>
+                    <div className="likes"> {likes} likes </div>
                 </div>
             </div>
-            <div className='Comments'><CollapseComponent headline='Comments' content={props.comments} /></div>
+            <div className="comments"><CollapseComponent headline='Comments' content={comments} /></div>
         </div>
     );
 }
