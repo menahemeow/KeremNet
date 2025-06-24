@@ -16,12 +16,12 @@ export function Post(props: PostProps) {
         <div className="Post">
             <div className="Message">
                 <h2> {props.postMessage} </h2>
+                <div className="Information">
+                    <div className='Author'> {props.author} - {props.dateAndTime.toDateString()} </div>
+                    <div className='Likes'> {props.likes} likes </div>
+                </div>
             </div>
-            <div className="Information">
-                <div className='Author'> {props.author} - {props.dateAndTime.toDateString()} </div>
-                <div className='Likes'> {props.likes} likes </div>
-            </div>
-            <CollapseComponent content={props.comments} />
+            <div className='Comments'><CollapseComponent headline='Comments' content={props.comments} /></div>
         </div>
     );
 }

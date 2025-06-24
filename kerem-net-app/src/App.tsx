@@ -4,7 +4,7 @@ import './App.css';
 
 let postComments = ['woowww it changed my life', 'I love you zoey', 'Return to the course Zoey!!!']
 
-let onePost: PostProps ={postMessage:'KereMitavrer Bahutz', likes:66, author:'zoey', dateAndTime:new Date(), comments:postComments}
+let onePost: PostProps ={postMessage:'You are my fire\nThe one, desire\nBelieve when I say\nI want it that way', likes:66, author:'zoey', dateAndTime:new Date(), comments:postComments}
 
 let posts: PostProps[] = [onePost];
 

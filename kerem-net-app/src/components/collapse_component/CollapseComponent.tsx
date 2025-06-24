@@ -1,31 +1,29 @@
-import { Accordion, AccordionDetails, AccordionSummary, Icon, Typography } from '@mui/material';
-import React, { useState } from 'react';
+import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 
 interface Props {
-    content: string[]
+    headline: string;
+    content: string[];
 }
 
 
 export function CollapseComponent(props: Props) {
-  const [isCollapsed, setIsCollapsed] = useState(true);
-
-  const toggleCollapse = () => {
-    setIsCollapsed(!isCollapsed);
-  };
 
   return (
-        <Accordion>
-            <AccordionSummary
-                expandIcon={<Icon/>}
+        <Accordion 
+        sx={{ 
+            backgroundColor:'#4a8383', 
+            borderRadius:''
+        }}>
+            <AccordionSummary sx={{borderRadius:'10%'}}
                 aria-controls="panel3-content"
                 id="panel3-header"
                 >
-                <Typography component="span">Comments</Typography>
+                <Typography sx={{borderRadius:'10%'}} component="span">{props.headline}</Typography>
             </AccordionSummary>
-            <AccordionDetails>
-                <div>
+            <AccordionDetails sx={{borderRadius:'10%'}}>
+                <div style={{borderRadius:'10%'}}>
                     {props.content.map((comment: string, index: number) => (
-                        <li key={index}>{comment}</li>
+                        <div key={index}>{comment}</div>
                     ))}
                 </div>
             </AccordionDetails>
