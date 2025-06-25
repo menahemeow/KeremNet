@@ -5,6 +5,7 @@ const AccordionSX = {
 }
 
 const HeadlineSX = {
+    backgroundColor:'#4a8383',
     borderTopLeftRadius:'1vh',
     borderTopRightRadius:'1vh',
     "&:hover": {

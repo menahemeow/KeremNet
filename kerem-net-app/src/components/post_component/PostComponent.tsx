@@ -6,7 +6,7 @@ export interface PostProps{
     message: string;
     likes: number;
     author: string;
-    dateAndTime: Date;
+    dateAndTime: string;
     comments: string[];
 }
 
@@ -17,7 +17,7 @@ export function Post({message, likes, author, dateAndTime, comments}: PostProps)
             <div className="message">
                 <h2> {message} </h2>
                 <div className="information">
-                    <div className="author"> {author} - {dateAndTime.toDateString()} </div>
+                    <div className="author"> {author} - {dateAndTime} </div>
                     <div className="likes"> {likes} likes </div>
                 </div>
             </div>
