@@ -10,10 +10,10 @@ export interface PostProps{
     comments: string[];
 }
 
-export function Post({message, likes, author, dateAndTime, comments}: PostProps) {
+export function Post({message, likes, author, dateAndTime, comments, ...rest}: PostProps) {
 
     return (
-        <div className="post">
+        <div className="post" style={{...rest}}>
             <div className="message">
                 <h2> {message} </h2>
                 <div className="information">

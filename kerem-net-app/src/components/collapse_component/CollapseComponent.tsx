@@ -1,23 +1,22 @@
 import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
 
 const AccordionSX = {
-    backgroundColor:'#4a8383',
+    backgroundColor:'rgba(255, 255, 255, .2)',
 }
 
 const HeadlineSX = {
-    backgroundColor:'#4a8383',
     borderStyle:"hidden",
     borderTopLeftRadius:'.25em',
     borderTopRightRadius:'.25em',
     "&:hover": {
-        backgroundColor:'#396464'
+        backgroundColor:'rgba(255, 255, 255, .2)'
     }
 }
 
 const CommentStyle = {
     whiteSpace:'pre-line',
     borderStyle:"hidden",
-    backgroundColor:'#66c0c0',
+    backgroundColor:'rgba(255, 255, 255, .3)',
     marginBottom:'1%',
     padding:'1%',
     borderRadius:'.25em',

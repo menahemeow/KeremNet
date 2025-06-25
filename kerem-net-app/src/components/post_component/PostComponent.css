@@ -3,11 +3,12 @@
 .post {
     height: fit-content;
     width: 33%;
+    min-width: 25em;
     border-radius: .25em;
     border-width: 0.01%;
     border-color: black;
     border-style:solid;
-    background-color: #2f4f4f;
+    background-color: rgb(53, 112, 112);
 
     padding: .5%;
 }
@@ -18,7 +19,7 @@
     border-width: 0.01%;
     border-color: black;
     border-style:hidden;
-    background-color: #4a8383;
+    background-color: rgba(255, 255, 255, .2);
     white-space: pre-line;
 
     padding: 1%;
@@ -36,7 +37,6 @@
     border-width: 0.01%;
     border-color: black;
     border-style:hidden;
-    background-color: #4a8383;
 
     justify-content: space-between;
     
