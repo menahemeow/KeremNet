@@ -25,17 +25,8 @@
 }
 
 .information {
-    height: fit-content;
-    border-radius: 1vh;
-    border-width: 0.01%;
-    border-color: black;
-    border-style:hidden;
-    background-color: #4a8383;
-
     display:flex;
     justify-content: space-between;
-
-    padding: 1%;
 }
 
 

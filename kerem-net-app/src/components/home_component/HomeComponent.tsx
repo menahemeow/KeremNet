@@ -13,11 +13,11 @@ interface HomeProps {
 export function Home({posts}: HomeProps) {
 
     return (
-        <ul className="Posts">
-                {posts.map((props: PostProps, index: number) => (
-                    <div style={PostStyle} key={index}> <Post message={props.message} likes={props.likes} 
-                    author={props.author} dateAndTime={props.dateAndTime} comments={props.comments}></Post></div>
-                ))}
-            </ul>
+        <ul>
+            {posts.map((props: PostProps, index: number) => (
+                <div style={PostStyle} key={index}> <Post message={props.message} likes={props.likes} 
+                author={props.author} dateAndTime={props.dateAndTime} comments={props.comments}></Post></div>
+            ))}
+        </ul>
     );
 }
