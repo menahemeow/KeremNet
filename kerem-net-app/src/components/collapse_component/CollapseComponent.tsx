@@ -6,8 +6,9 @@ const AccordionSX = {
 
 const HeadlineSX = {
     backgroundColor:'#4a8383',
-    borderTopLeftRadius:'1vh',
-    borderTopRightRadius:'1vh',
+    borderStyle:"hidden",
+    borderTopLeftRadius:'.25em',
+    borderTopRightRadius:'.25em',
     "&:hover": {
         backgroundColor:'#396464'
     }
@@ -15,10 +16,11 @@ const HeadlineSX = {
 
 const CommentStyle = {
     whiteSpace:'pre-line',
+    borderStyle:"hidden",
     backgroundColor:'#66c0c0',
     marginBottom:'1%',
     padding:'1%',
-    borderRadius:'1vh',
+    borderRadius:'.25em',
 }
 
 interface Props {

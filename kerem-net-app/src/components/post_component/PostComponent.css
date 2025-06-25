@@ -3,7 +3,7 @@
 .post {
     height: fit-content;
     width: 33%;
-    border-radius: .5vh;
+    border-radius: .25em;
     border-width: 0.01%;
     border-color: black;
     border-style:solid;
@@ -14,7 +14,7 @@
 
 .message {
     height: fit-content;
-    border-radius: .5vh;
+    border-radius: .25em;
     border-width: 0.01%;
     border-color: black;
     border-style:hidden;
@@ -32,7 +32,7 @@
 
 .comments {
     height: fit-content;
-    border-radius: 1vh;
+    border-radius: .25em;
     border-width: 0.01%;
     border-color: black;
     border-style:hidden;
