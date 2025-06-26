@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { PostProps, Post} from "../post_component/PostComponent";
+import { Outlet } from "react-router-dom";
 
 const PostStyle: React.CSSProperties = {
     marginBottom:'1%',
