@@ -1,10 +1,10 @@
-import { Accordion, AccordionDetails, AccordionSummary, Typography } from '@mui/material';
+import { Accordion, AccordionDetails, AccordionSummary, SxProps, Typography } from '@mui/material';
 
-const AccordionSX = {
+const AccordionSX: SxProps = {
     backgroundColor:'rgba(255, 255, 255, .2)',
 }
 
-const HeadlineSX = {
+const HeadlineSX: SxProps = {
     borderStyle:"hidden",
     borderTopLeftRadius:'.25em',
     borderTopRightRadius:'.25em',
@@ -13,7 +13,7 @@ const HeadlineSX = {
     }
 }
 
-const CommentStyle = {
+const CommentStyle: React.CSSProperties = {
     whiteSpace:'pre-line',
     borderStyle:"hidden",
     backgroundColor:'rgba(255, 255, 255, .3)',

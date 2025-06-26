@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { PostProps, Post} from "../post_component/PostComponent";
 
-const PostStyle = {
+const PostStyle: React.CSSProperties = {
     marginBottom:'1%',
 }
 
