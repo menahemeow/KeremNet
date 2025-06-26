@@ -1,0 +1,25 @@
+[
+    {
+        "message":"You are my fire\nThe one, desire\nBelieve when I say\nI want it that way",
+        "likes":666,
+        "author":"backstreet zoey",
+        "dateAndTime":"Mon April 12 1999",
+        "comments": ["woowww it changed my life", "I love you zoey", "Return to the course Zoey!!!\nLiran misses you"]
+    },
+
+    {
+        "message":"When you were young and your heart was an open book\nyou used to say \"Live and let live\"\nBut if this ever changing world in which we live in\nMakes you give in and cry\n\nSay \"Live and let die\"",
+        "likes":6666,
+        "author":"guns & zoey",
+        "dateAndTime":"Fri December 9 1991",
+        "comments": ["woowww it changed my life", "I love you zoey", "Return to the course Zoey!!!\nLiran misses you"]
+    },
+
+    {
+        "message":"שאף בן *ונה לא יגיד ש'תה לא יודע\nשאף חרטטן לא יגיד ש'תה לא יכול\nשאף מנוול לא יגיד שאין לך סוואגה",
+        "likes":66,
+        "author":"nechi zoey",
+        "dateAndTime":"Sun July 12 2015",
+        "comments": ["woowww it changed my life", "I love you zoey", "Return to the course Zoey!!!\nLiran misses you"]
+    }
+]

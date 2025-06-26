@@ -1,0 +1,44 @@
+
+
+.post {
+    height: fit-content;
+    width: 33%;
+    min-width: 25em;
+    border-radius: .25em;
+    border-width: 0.01%;
+    border-color: black;
+    border-style:solid;
+    background-color: rgb(53, 112, 112);
+
+    padding: .5%;
+}
+
+.message {
+    height: fit-content;
+    border-radius: .25em;
+    border-width: 0.01%;
+    border-color: black;
+    border-style:hidden;
+    background-color: rgba(255, 255, 255, .2);
+    white-space: pre-line;
+
+    padding: 1%;
+}
+
+.information {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.comments {
+    height: fit-content;
+    border-radius: .25em;
+    border-width: 0.01%;
+    border-color: black;
+    border-style:hidden;
+
+    justify-content: space-between;
+    
+    margin-top: 1%;
+}
