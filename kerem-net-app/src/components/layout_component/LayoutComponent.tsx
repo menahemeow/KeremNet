@@ -1,8 +1,6 @@
 import React from 'react';
-import { Home } from '../home_component/HomeComponent';
 import logo from '../../assets/KeremNetLogo.jpg'
-import { createBrowserRouter, Link, NavLink, Outlet, RouterProvider } from 'react-router-dom';
-import { Tab } from '@mui/material';
+import { NavLink, Outlet } from 'react-router-dom';
 
 const HeadStyle: React.CSSProperties = {
     width:'100%',
@@ -16,18 +14,6 @@ const LogoStyle: React.CSSProperties = {
     maxHeight:'3em',
     borderRadius:'50%'
 }
-
-const router = createBrowserRouter([
-    {
-      path: '/',
-      element: <Layout/>,
-      errorElement:<>404 Not Found</>
-    },
-    {
-      path: '/Home',
-      element: <Home/>
-    }
-])
 
 export function Layout(){
     return ( 
